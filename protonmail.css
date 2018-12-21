@@ -1,3 +1,90 @@
+#body .plus {
+  color: #d7ff00;
+}
+
+#body .logo:before {
+  opacity: 0.6;
+}
+
+#body .pm_dropdown > a,
+#body .pm_dropdown > button,
+#body .pm_dropdown > ul > li {
+  border-bottom: 1px solid #005a6f;
+}
+
+#body nav.pm_toolbar .pm_buttons a,
+#body nav.pm_toolbar .pm_buttons button,
+#body .pm_buttons > .pm_buttons-child.fa::before,
+#body .pm_buttons > .pm_buttons-child > div {
+  transition: none;
+}
+
+#body nav.pm_toolbar .pm_buttons a:hover,
+#body nav.pm_toolbar .pm_buttons button:hover {
+  color: #d0d0d0;
+  background-color: #005a6f;
+}
+
+#body .pm_dropdown advancedFilterElement-content,
+#body .pm_dropdown a:hover,
+#body .pm_dropdown button:hover,
+#body .pm_dropdown ul li:hover {
+  color: #d0d0d0 !important;
+  background-color: #005a6f !important;
+}
+
+#body .pm_dropdown .dropdown-label-container .dropdown-label-title,
+#body .pm_dropdown .dropdown-folder-container .dropdown-folder-title {
+  color: #00ffaf;
+}
+
+#body .pm_dropdown .dropdown-label-container .dropdown-label-search-input
+#body .pm_dropdown .dropdown-folder-container .dropdown-folder-search-input {
+  color: #fdf6e3;
+  background-color: #002b36;
+}
+
+#body .pm_dropdown.pm_dropdown-opened,
+#body .pm_dropdown .dropdown-label-container .scrollbox-container,
+#body .pm_dropdown .dropdown-label-container .dropdown-label-create button,
+#body .pm_dropdown .dropdown-label-container .dropdown-label-scrollbox-group-item,
+#body .pm_dropdown .dropdown-label-container .scrollbox-container-group,
+#body .pm_dropdown .dropdown-label-container .scrollbox-container-group button,
+#body .pm_dropdown .dropdown-folder-container .scrollbox-container,
+#body .pm_dropdown .dropdown-folder-container .dropdown-folder-create button,
+#body .pm_dropdown .dropdown-folder-container .dropdown-folder-scrollbox-group-item,
+#body .pm_dropdown .dropdown-folder-container .scrollbox-container-group,
+#body .pm_dropdown .dropdown-folder-container .scrollbox-container-group button {
+  background-color: #002b36 !important;
+}
+
+#body .pm_dropdown .dropdown-label-container .dropdown-label-create .createLabel-new-name i,
+#body .pm_dropdown .dropdown-folder-container .dropdown-folder-create .dropdown-folder-create-value {
+  color: #5fd7ff;
+}
+
+#body .dropdown-label-alsoArchive {
+  border-top: 1px solid #005a6f;
+  color: #d0d0d0;
+}
+
+#body .pm_dropdown .dropdown-label-container .scrollbox-container,
+#body .pm_dropdown .dropdown-folder-container .scrollbox-container {
+  border-top: 1px solid #005a6f;
+  border-bottom: 1px solid #005a6f;
+}
+
+
+#body .pm_dropdown .dropdown-label-scrollbox-label,
+#body .pm_dropdown .dropdown-label-scrollbox-label-text span {
+  color: #d0d0d0;
+  background-color: #002b36 !important;
+}
+
+#body .pm_dropdown > button {
+  background-color: #002b36 !important;
+}
+
 #body .pm_buttons .disabled {
   box-shadow: none;
 }
@@ -16,16 +103,37 @@
   color: #5c95a3;
 }
 
+#body #pm_view,
 #body .conversation-wrapper,
 #body header .headerSecuredDesktop-logo,
-.messagePlaceholder {
+#body #pm_view #pm_placeholder,
+#body #conversation-list-mobile .messagePlaceholder,
+#body #conversation-list-columns .messagePlaceholder,
+#body #conversation-list-rows .messagePlaceholder {
   background-color: #002b36;
 }
 
+#body #pm_view #pm_placeholder,
+#body #conversation-list-mobile .messagePlaceholder,
+#body #conversation-list-columns .messagePlaceholder,
+#body #conversation-list-rows .messagePlaceholder {
+  color: #5fd7ff;
+}
+
+#body #conversation-list-columns {
+  border-right: 1px solid #005a6f;
+}
+
+#body #conversation-list-mobile .conversation-wrapper .conversation,
+#body #conversation-list-columns .conversation-wrapper .conversation,
 #body #conversation-list-rows .conversation-wrapper .conversation {
   border-bottom: 1px solid #005a6f;
 }
 
+#body #conversation-list-mobile .conversation-wrapper .conversation,
+#body #conversation-list-mobile .conversation-wrapper .conversation .subject,
+#body #conversation-list-columns .conversation-wrapper .conversation,
+#body #conversation-list-columns .conversation-wrapper .conversation .subject,
 #body #conversation-list-rows .conversation-wrapper .conversation,
 #body #conversation-list-rows .conversation-wrapper .conversation .subject h4 {
   background-color: #004052;
@@ -33,34 +141,44 @@
   font-weight: 400;
 }
 
+#body #conversation-list-mobile .conversation-wrapper .conversation.read,
+#body #conversation-list-mobile .conversation-wrapper .conversation.read .subject h4,
+#body #conversation-list-columns .conversation-wrapper .conversation.read,
+#body #conversation-list-columns .conversation-wrapper .conversation.read .subject h4,
 #body #conversation-list-rows .conversation-wrapper .conversation.read,
 #body #conversation-list-rows .conversation-wrapper .conversation.read .subject h4 {
   color: #5c95a3;
 }
 
+#body #conversation-list-mobile .conversation-wrapper .conversation.marked:before,
+#body #conversation-list-columns .conversation-wrapper .conversation.marked:before,
 #body #conversation-list-rows .conversation-wrapper .conversation.marked:before {
   background-color: #5fd7ff;
 }
 
+#body #conversation-list-mobile .conversation-wrapper .conversation .singleStar,
+#body #conversation-list-columns .conversation-wrapper .conversation .singleStar,
 #body #conversation-list-rows .conversation-wrapper .conversation .singleStar {
   color: #fdf6e3;
 }
 
+#body #conversation-list-mobile .conversation-wrapper .conversation .singleStar .starButton-unstar,
+#body #conversation-list-columns .conversation-wrapper .conversation .singleStar .starButton-unstar,
 #body #conversation-list-rows .conversation-wrapper .conversation .singleStar .starButton-unstar {
   color: #d7ff00;
 }
 
-#body nav.toolbarDesktop-container,
+#body nav.pm_toolbar,
 #body section.sidebar {
   background-color: #003847;
 }
 
-#body nav.toolbarDesktop-container.pm_toolbar {
-  box-shadow: 0 -1px 0 #005a6f;
+#body #pm_main nav.pm_toolbar {
+  box-shadow: inset 0 -1px 0 #005a6f;
 }
 
-#body nav.toolbarDesktop-container .pm_buttons a,
-#body nav.toolbarDesktop-container .pm_buttons button {
+#body nav.pm_toolbar .pm_buttons a,
+#body nav.pm_toolbar .pm_buttons button {
   background-color: #002b36;
   color: #d0d0d0;
   margin-right: 2.5px;
@@ -68,8 +186,8 @@
   outline: none;
 }
 
-#body nav.toolbarDesktop-container .pm_buttons,
-#body nav.toolbarDesktop-container .pm_buttons > * {
+#body nav.pm_toolbar .pm_buttons,
+#body nav.pm_toolbar .pm_buttons > * {
   border: none;
 }
 
