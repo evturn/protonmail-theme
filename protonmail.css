@@ -34,6 +34,7 @@
   border-color: var(--base03);
 }
 
+#body #conversation-view .message .summary .location.folders,
 #body #conversation-view .message .summary,
 #body #conversation-view .message .summary-left,
 #body #conversation-view .message .summary-right,
